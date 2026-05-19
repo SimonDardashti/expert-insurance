@@ -27,6 +27,88 @@ const {
       rel="stylesheet"
     />
     <title>{title} | Expert Insurance Services</title>
+
+    <!-- JSON-LD Structured Data: LocalBusiness + Reviews (SEO/AEO) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "InsuranceAgency",
+      "name": "Expert Insurance Services",
+      "url": "https://ex45.com",
+      "logo": "https://ex45.com/logo.png",
+      "image": "https://ex45.com/logo.png",
+      "description": "Independent insurance broker serving Southern California since 1981. Auto, home, life, health, commercial, dental, and disability insurance. Serving Sherman Oaks, Encino, Tarzana, Woodland Hills, Calabasas, Van Nuys, Studio City, Burbank, North Hollywood, Reseda, Chatsworth, and Granada Hills.",
+      "telephone": "+18189078189",
+      "email": "Ex1@sbcglobal.net",
+      "foundingDate": "1981",
+      "founder": {
+        "@type": "Person",
+        "name": "Shawn Dardashti"
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "15145 Ventura Blvd",
+        "addressLocality": "Sherman Oaks",
+        "addressRegion": "CA",
+        "postalCode": "91403",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 34.1511,
+        "longitude": -118.4769
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "17:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": [
+        "Sherman Oaks, CA", "Encino, CA", "Tarzana, CA", "Woodland Hills, CA",
+        "Calabasas, CA", "Van Nuys, CA", "Studio City, CA", "Burbank, CA",
+        "North Hollywood, CA", "Reseda, CA", "Chatsworth, CA", "Granada Hills, CA"
+      ],
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "3"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Michael R." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "datePublished": "2026-01-14",
+          "reviewBody": "I work with the owner Shawn and he's been solid from day one. He always explains my options clearly, doesn't try to upsell me, and gets me a better setup for all of my auto, home, and business at a price I feel great about. Communication is fast, Shawn always gets back to me within 1 hour. Paperwork is easy, and he follows through. If you want an insurance agent who's responsive and actually cares, go with him."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Lisa S." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "datePublished": "2025-11-21",
+          "reviewBody": "The owner, Shawn, is an amazing broker. He is the most professional, honest, and caring broker I have worked with. He is devoted to the interests of his clients. He gets his clients the best insurances that fit their needs. If the client faces any issues he responds immediately. I highly recommend working with Shawn. He is an excellent broker."
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Pontea B." },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "datePublished": "2026-03-06",
+          "reviewBody": "We have been working with Shawn for several years now and cannot recommend him enough. He always takes care of your situation to choose the best insurance and plans, and explains everything with detail to make sure all is clear and aligned. You're in great hands!"
+        }
+      ]
+    }
+    </script>
   </head>
   <body class="font-sans bg-white text-brand-charcoal antialiased">
     <slot />

@@ -398,27 +398,78 @@ import Footer from '../components/Footer.astro';
         We've been serving Southern California families for over 40 years. Read what our clients have to say about working with Expert Insurance Services.
       </p>
 
-      <!-- Testimonial card -->
-      <div class="bg-white rounded-2xl p-8 md:p-10 text-left shadow-xl mb-10 max-w-3xl mx-auto">
-        <div class="flex gap-1 mb-4" aria-label="5 stars">
-          {[1,2,3,4,5].map(() => (
-            <svg class="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-          ))}
-        </div>
-        <blockquote class="text-gray-700 text-lg leading-relaxed italic mb-6">
-          "I work with the owner Shawn and he's been solid from day one. He always explains my options clearly, doesn't try to upsell me, and gets me a better setup for all of my auto, home, and business at a price I feel great about. Communication is fast, Shawn always gets back to me within 1 hour. Paperwork is easy, and he follows through. If you want an insurance agent who's responsive and actually cares, go with him."
-        </blockquote>
-        <div class="flex items-center gap-3">
-          <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
-            <span class="text-brand-red font-bold text-sm">MR</span>
+      <!-- Testimonial cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-left">
+
+        <!-- Michael R. -->
+        <div class="bg-white rounded-2xl p-7 shadow-xl flex flex-col">
+          <div class="flex gap-1 mb-4" aria-label="5 stars">
+            {[1,2,3,4,5].map(() => (
+              <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
           </div>
-          <div>
-            <p class="font-bold text-brand-charcoal">Michael R.</p>
-            <p class="text-gray-400 text-sm">Beverly Hills, CA · Yelp Review</p>
+          <blockquote class="text-gray-700 leading-relaxed italic mb-6 flex-1">
+            "He always explains my options clearly, doesn't try to upsell me, and gets me a better setup for all of my auto, home, and business at a price I feel great about. If you want an insurance agent who's responsive and actually cares, go with him."
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+              <span class="text-brand-red font-bold text-xs">MR</span>
+            </div>
+            <div>
+              <p class="font-bold text-brand-charcoal text-sm">Michael R.</p>
+              <p class="text-gray-400 text-xs">Beverly Hills, CA · Yelp</p>
+            </div>
           </div>
         </div>
+
+        <!-- Lisa S. -->
+        <div class="bg-white rounded-2xl p-7 shadow-xl flex flex-col">
+          <div class="flex gap-1 mb-4" aria-label="5 stars">
+            {[1,2,3,4,5].map(() => (
+              <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <blockquote class="text-gray-700 leading-relaxed italic mb-6 flex-1">
+            "The most professional, honest, and caring broker I have worked with. He is devoted to the interests of his clients and gets them the best insurance that fits their needs. If the client faces any issues he responds immediately. He is an excellent broker."
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+              <span class="text-brand-red font-bold text-xs">LS</span>
+            </div>
+            <div>
+              <p class="font-bold text-brand-charcoal text-sm">Lisa S.</p>
+              <p class="text-gray-400 text-xs">Tarzana, CA · Yelp</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pontea B. -->
+        <div class="bg-white rounded-2xl p-7 shadow-xl flex flex-col">
+          <div class="flex gap-1 mb-4" aria-label="5 stars">
+            {[1,2,3,4,5].map(() => (
+              <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+              </svg>
+            ))}
+          </div>
+          <blockquote class="text-gray-700 leading-relaxed italic mb-6 flex-1">
+            "We have been working with Shawn for several years now and cannot recommend him enough. He always takes care of your situation to choose the best insurance and plans, and explains everything with detail to make sure all is clear and aligned. You're in great hands!"
+          </blockquote>
+          <div class="flex items-center gap-3">
+            <div class="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
+              <span class="text-brand-red font-bold text-xs">PB</span>
+            </div>
+            <div>
+              <p class="font-bold text-brand-charcoal text-sm">Pontea B.</p>
+              <p class="text-gray-400 text-xs">Los Angeles, CA · Yelp</p>
+            </div>
+          </div>
+        </div>
+
       </div>
 
       <!-- CTA buttons -->

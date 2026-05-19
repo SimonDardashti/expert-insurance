@@ -378,94 +378,71 @@ import Footer from '../components/Footer.astro';
   <!-- ============================
        REVIEWS CTA
   ============================= -->
-  <section class="bg-brand-red py-16 md:py-24" aria-labelledby="reviews-heading">
+  <section class="bg-brand-cream py-16 md:py-20" aria-labelledby="reviews-heading">
     <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
 
-      <!-- Heading -->
-      <div class="flex justify-center mb-5" aria-hidden="true">
-        <div class="flex gap-1">
-          {[1,2,3,4,5].map(() => (
-            <svg class="w-7 h-7 text-yellow-300" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </svg>
-          ))}
-        </div>
-      </div>
-      <h2 id="reviews-heading" class="font-serif text-3xl sm:text-4xl font-bold text-white mb-4">
-        See What Our Clients Say
+      <p class="text-brand-red font-semibold text-sm uppercase tracking-widest mb-3">Client Feedback</p>
+      <h2 id="reviews-heading" class="font-serif text-3xl sm:text-4xl font-bold text-brand-charcoal mb-4">
+        What Clients Say
       </h2>
-      <p class="text-red-100 text-lg leading-relaxed mb-10">
-        We've been serving Southern California families for over 40 years. Read what our clients have to say about working with Expert Insurance Services.
+      <p class="text-gray-500 text-base leading-relaxed mb-10 max-w-xl mx-auto">
+        We appreciate every client who takes the time to share their experience.
       </p>
 
-      <!-- Testimonial cards -->
+      <!-- Review cards -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10 text-left">
 
         <!-- Michael R. -->
-        <div class="bg-white rounded-2xl p-7 shadow-xl flex flex-col">
-          <div class="flex gap-1 mb-4" aria-label="5 stars">
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-6 flex flex-col">
+          <div class="flex gap-0.5 mb-4" aria-label="5-star review">
             {[1,2,3,4,5].map(() => (
-              <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
             ))}
           </div>
-          <blockquote class="text-gray-700 leading-relaxed italic mb-6 flex-1">
-            "He always explains my options clearly, doesn't try to upsell me, and gets me a better setup for all of my auto, home, and business at a price I feel great about. If you want an insurance agent who's responsive and actually cares, go with him."
+          <blockquote class="text-gray-600 leading-relaxed italic mb-5 flex-1 text-sm">
+            "Always explains my options clearly, doesn't try to upsell me… If you want an insurance agent who's responsive and actually cares, go with him."
           </blockquote>
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
-              <span class="text-brand-red font-bold text-xs">MR</span>
-            </div>
-            <div>
-              <p class="font-bold text-brand-charcoal text-sm">Michael R.</p>
-              <p class="text-gray-400 text-xs">Beverly Hills, CA · Yelp</p>
-            </div>
+          <div>
+            <p class="font-semibold text-brand-charcoal text-sm">Michael R.</p>
+            <p class="text-gray-400 text-xs mt-0.5">Review from Yelp</p>
           </div>
         </div>
 
         <!-- Lisa S. -->
-        <div class="bg-white rounded-2xl p-7 shadow-xl flex flex-col">
-          <div class="flex gap-1 mb-4" aria-label="5 stars">
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-6 flex flex-col">
+          <div class="flex gap-0.5 mb-4" aria-label="5-star review">
             {[1,2,3,4,5].map(() => (
-              <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
             ))}
           </div>
-          <blockquote class="text-gray-700 leading-relaxed italic mb-6 flex-1">
-            "The most professional, honest, and caring broker I have worked with. He is devoted to the interests of his clients and gets them the best insurance that fits their needs. If the client faces any issues he responds immediately. He is an excellent broker."
+          <blockquote class="text-gray-600 leading-relaxed italic mb-5 flex-1 text-sm">
+            "The most professional, honest, and caring broker I have worked with. He is devoted to the interests of his clients and responds immediately if any issues arise."
           </blockquote>
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
-              <span class="text-brand-red font-bold text-xs">LS</span>
-            </div>
-            <div>
-              <p class="font-bold text-brand-charcoal text-sm">Lisa S.</p>
-              <p class="text-gray-400 text-xs">Tarzana, CA · Yelp</p>
-            </div>
+          <div>
+            <p class="font-semibold text-brand-charcoal text-sm">Lisa S.</p>
+            <p class="text-gray-400 text-xs mt-0.5">Review from Yelp</p>
           </div>
         </div>
 
         <!-- Pontea B. -->
-        <div class="bg-white rounded-2xl p-7 shadow-xl flex flex-col">
-          <div class="flex gap-1 mb-4" aria-label="5 stars">
+        <div class="bg-white rounded-xl border border-gray-100 shadow-sm p-6 flex flex-col">
+          <div class="flex gap-0.5 mb-4" aria-label="5-star review">
             {[1,2,3,4,5].map(() => (
-              <svg class="w-4 h-4 text-red-500" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+              <svg class="w-4 h-4 text-yellow-400" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                 <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
               </svg>
             ))}
           </div>
-          <blockquote class="text-gray-700 leading-relaxed italic mb-6 flex-1">
-            "We have been working with Shawn for several years now and cannot recommend him enough. He always takes care of your situation to choose the best insurance and plans, and explains everything with detail to make sure all is clear and aligned. You're in great hands!"
+          <blockquote class="text-gray-600 leading-relaxed italic mb-5 flex-1 text-sm">
+            "Cannot recommend enough. Always explains everything with detail to make sure all is clear and aligned. You're in great hands!"
           </blockquote>
-          <div class="flex items-center gap-3">
-            <div class="w-9 h-9 rounded-full bg-red-100 flex items-center justify-center flex-shrink-0">
-              <span class="text-brand-red font-bold text-xs">PB</span>
-            </div>
-            <div>
-              <p class="font-bold text-brand-charcoal text-sm">Pontea B.</p>
-              <p class="text-gray-400 text-xs">Los Angeles, CA · Yelp</p>
+          <div>
+            <p class="font-semibold text-brand-charcoal text-sm">Pontea B.</p>
+            <p class="text-gray-400 text-xs mt-0.5">Review from Yelp</p>
             </div>
           </div>
         </div>
@@ -475,22 +452,19 @@ import Footer from '../components/Footer.astro';
       <!-- CTA buttons -->
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
         <a
-          href="https://www.google.com/search?q=Expert+Insurance+Services+Sherman+Oaks+reviews"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center gap-2 bg-white text-brand-red font-bold text-base px-8 py-4 rounded-lg hover:bg-red-50 transition-colors duration-200 shadow-lg"
-          aria-label="Read our Google Reviews (opens in new tab)"
-        >
-          Read Our Google Reviews
-        </a>
-        <a
           href="https://www.yelp.com/biz/expert-insurance-services-sherman-oaks"
           target="_blank"
           rel="noopener noreferrer"
-          class="inline-flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white font-bold text-base px-8 py-4 rounded-lg hover:bg-red-700 transition-colors duration-200"
-          aria-label="Read our Yelp Reviews (opens in new tab)"
+          class="inline-flex items-center justify-center gap-2 bg-brand-red text-white font-bold text-base px-8 py-4 rounded-lg hover:bg-brand-red-dark transition-colors duration-200 shadow-sm"
+          aria-label="Read more client reviews on Yelp (opens in new tab)"
         >
-          Read Our Yelp Reviews
+          Read More Reviews
+        </a>
+        <a
+          href="/contact"
+          class="inline-flex items-center justify-center gap-2 border-2 border-brand-charcoal text-brand-charcoal font-bold text-base px-8 py-4 rounded-lg hover:bg-brand-charcoal hover:text-white transition-colors duration-200"
+        >
+          Contact Us
         </a>
       </div>
 

@@ -8,7 +8,7 @@ export interface Props {
 
 const {
   title,
-  description = "Expert Insurance Services — Independent insurance broker serving Southern California since 1981. Auto, Home, Life, Health, Commercial, Dental, and Disability insurance. Call (818) 907-8189."
+  description = "Expert Insurance Services, Inc. — Independent insurance broker serving Southern California since 1981. Auto, Home, Life, Health, Commercial, Dental, and Disability insurance. Call (818) 907-8189."
 } = Astro.props;
 ---
 
@@ -26,14 +26,14 @@ const {
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>{title} | Expert Insurance Services</title>
+    <title>{title} | Expert Insurance Services, Inc.</title>
 
     <!-- JSON-LD Structured Data: InsuranceAgency (conservative, accurate business info only) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "InsuranceAgency",
-      "name": "Expert Insurance Services",
+      "name": "Expert Insurance Services, Inc.",
       "url": "https://ex45.com",
       "logo": "https://ex45.com/logo.png",
       "description": "Independent insurance broker serving Southern California since 1981. Auto, home, life, health, commercial, dental, and disability insurance.",

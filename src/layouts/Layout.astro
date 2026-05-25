@@ -8,8 +8,11 @@ export interface Props {
 
 const {
   title,
-  description = "Expert Insurance Services, Inc. — Independent insurance broker serving Southern California since 1981. Auto, Home, Life, Health, Commercial, Dental, and Disability insurance. Call (818) 907-8189."
+  description = "Expert Insurance Services is an independent insurance agency in Sherman Oaks, CA. We help clients compare auto, home, life, health, commercial, and disability coverage options."
 } = Astro.props;
+
+const canonicalUrl = new URL(Astro.url.pathname, 'https://www.ex45.com').href;
+const ogImage = 'https://www.ex45.com/logo.png';
 ---
 
 <!doctype html>
@@ -20,22 +23,38 @@ const {
     <meta name="description" content={description} />
     <meta name="theme-color" content="#B91C1C" />
     <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="canonical" href={canonicalUrl} />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Expert Insurance Services" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={ogImage} />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <title>{title} | Expert Insurance Services, Inc.</title>
+    <title>{title}</title>
 
-    <!-- JSON-LD Structured Data: InsuranceAgency (conservative, accurate business info only) -->
+    <!-- JSON-LD Structured Data: InsuranceAgency -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "InsuranceAgency",
       "name": "Expert Insurance Services, Inc.",
-      "url": "https://ex45.com",
-      "logo": "https://ex45.com/logo.png",
+      "url": "https://www.ex45.com",
+      "logo": "https://www.ex45.com/logo.png",
       "description": "Independent insurance broker serving Southern California since 1981. Auto, home, life, health, commercial, dental, and disability insurance.",
       "telephone": "+18189078189",
       "email": "Ex1@sbcglobal.net",
